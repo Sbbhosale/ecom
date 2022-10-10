@@ -41,13 +41,19 @@ main{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    list-style-type:none;
 }
 
 .productCard {
     /* border: 1px solid black; */
     width : 210px;
     height: fit-content;
-    margin: 0 10px 30px
+    margin: 0 10px 30px;
+    
+}
+
+.productCard:hover{
+    box-shadow: 3px 1px 21px 0px rgba(235,230,235,1);
 }
 
 img {
@@ -62,8 +68,9 @@ img {
 }
 
 .product-metaInfo {
-    padding : 0 10px;
+    padding : 10px 10px;
     margin-top : 12px;
+    position: relative;
 }
 
 .productBrand-product {
@@ -92,4 +99,34 @@ img {
     font-weight: 400;
     color: #ff905a;
     margin-left: 5px;
+}
+
+.productCard-userActionWishlist {
+    /* border: 1px solid black; */
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;    
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 40%;
+    background-color: white;
+    padding : 1rem;
+    
+}
+
+.productCard-userActionWishlist:hover {
+    visibility: visible;        
+    /* visibility: hidden; */
+}
+
+
+.productCard-wishlistBtn{
+    padding : .5rem .6rem;
+    border-radius: .2rem;
+    background-color: white;
+    border: black 1px solid;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
