@@ -31,16 +31,23 @@ main{
 .productDisplay-section{
     border : 1px solid black;  
     flex-grow : 3;
+    /* display: flex; */
+    
+    
+    padding: 2rem;
+}
+
+.productDisplaySection-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 2rem;
 }
 
 .productCard {
     /* border: 1px solid black; */
-    width : 250px;
+    width : 210px;
     height: fit-content;
+    margin: 0 10px 30px
 }
 
 img {
@@ -68,8 +75,8 @@ img {
 }
 
 .product-DiscountedPrice {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     color : #282c3f;
 }
 
