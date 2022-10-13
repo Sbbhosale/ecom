@@ -10,43 +10,40 @@ html{
 
 
 
-nav{
-    border : 1px solid black;
-    height : 13vh;
+header{
+    /* border : 1px solid black; */
+    /* height : 13vh; */
 }
 
 main{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     
 }
 
 .side-section{
-    border : 1px solid black;
+    /* border : 1px solid black; */
     flex-grow : 1;
     flex-basis: 30vw;
     
 }
 
 .productDisplay-section{
-    border : 1px solid black;  
-    flex-grow : 3;
-    /* display: flex; */
-    
-    
-    padding: 2rem;
+    /* border : 1px solid black;   */
+    flex-grow : 3; 
+    padding: 24px 20px 0px 15px;
 }
 
 .productDisplaySection-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    list-style-type:none;
+    list-style-type : none;
 }
 
 .productCard {
     /* border: 1px solid black; */
-    width : 210px;
+    width : 230px;
     height: fit-content;
     margin: 0 10px 30px;
     
@@ -103,6 +100,7 @@ img {
 
 .productCard-userActionWishlist {
     /* border: 1px solid black; */
+    padding: 16px 10px;
     visibility: hidden;
     display: flex;
     flex-direction: column;    
@@ -112,12 +110,11 @@ img {
     bottom: 40%;
     background-color: white;
     padding : 1rem;
-    z-index: 3; 
-    
+    z-index: 3;     
 }
 
 .productCard:hover .productCard-userActionWishlist {
-    visibility : visible; 
+    visibility : visible;
 }
 
 
@@ -145,3 +142,76 @@ img {
     height : 10px;
     width : 10px;
 }
+
+
+/* header and nav styling */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 1rem; */
+    
+    align-items: center;
+}
+
+.nav-link-section {
+    list-style-type: none;
+    display: flex;
+    /* border: 1px solid black; */
+    line-height: 80px;
+}
+
+.nav-link {
+    padding: 0 17px 28px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 550;
+    border-bottom: none;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    border-bottom: 3px solid black;
+}
+
+.productLogo {
+    font-size: 14px;
+    font-weight: 550;
+    margin-left: 2rem;
+}
+
+.user-searchBox-container{
+    width: fit-content;
+    display: flex;
+    /* border: 1px solid black; */
+    margin: 0 20px;
+    padding: 8px 10px 10px;
+    border-radius: .3rem;
+    background-color: #F5F5F6;
+}
+
+.user-searchBox{
+    border: none;
+    font-size: 14px;
+    outline: none;  
+    background-color: inherit;  
+}
+
+.search-link {
+    cursor: pointer;
+    opacity: 0.5;    
+}
+
+.user-actions {
+    display: flex;
+    
+    /* justify-content: center;
+    align-items: center; */
+    height: 40px;
+    border: 1px solid black;
+}
+
+
+
+ 
+
