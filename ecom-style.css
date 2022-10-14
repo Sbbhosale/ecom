@@ -6,6 +6,7 @@
 
 html{
     font-family: sans-serif;
+    background-color: white;
 }
 
 
@@ -13,16 +14,18 @@ html{
 header{
     /* border : 1px solid black; */
     /* height : 13vh; */
+    background-color: white;
 }
 
 main{
     /* border: 1px solid black; */
     display: flex;
+    margin-top: 5rem;
     
 }
 
 .side-section{
-    /* border : 1px solid black; */
+    border : 1px solid black;
     flex-grow : 1;
     flex-basis: 30vw;
     
@@ -147,11 +150,19 @@ img {
 /* header and nav styling */
 
 header {
+    width: 100%;
+    position: fixed;
+    top : 0;
+    left : 0;
+    right : 0;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
-    /* padding-top: 1rem; */
-    
+    padding-top: 1rem;    
     align-items: center;
+    padding : 0 2rem;
+    /* border: 1px solid black; */
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
 }
 
 .nav-link-section {
@@ -166,7 +177,6 @@ header {
     text-decoration: none;
     font-size: 14px;
     font-weight: 550;
-    border-bottom: none;
 }
 
 .nav-link:hover {
@@ -177,14 +187,14 @@ header {
 .productLogo {
     font-size: 14px;
     font-weight: 550;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }
 
 .user-searchBox-container{
     width: fit-content;
     display: flex;
     /* border: 1px solid black; */
-    margin: 0 20px;
+    margin: 0 10px;
     padding: 8px 10px 10px;
     border-radius: .3rem;
     background-color: #F5F5F6;
@@ -194,7 +204,9 @@ header {
     border: none;
     font-size: 14px;
     outline: none;  
-    background-color: inherit;  
+    background-color: inherit;
+    width: 20rem;
+
 }
 
 .search-link {
@@ -202,16 +214,62 @@ header {
     opacity: 0.5;    
 }
 
+
+
+
 .user-actions {
     display: flex;
+    margin-top: 1rem;
+}
+
+.actions {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;  
+    cursor: pointer;  
+}
+
+.logo-container {
+    height: 20px;
+}
+.user-action-logo {
+    height: 100%;
+}
+
+.user-action-name {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: .2rem;
+}
+
+.user-profile {
+    padding: 0 1rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    /* border : 1px solid black; */
+}
+
+.border-bottom {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left : 0;
+
+    /* border-bottom: 3px solid black; */
+    /* width: rem; */
     
-    /* justify-content: center;
-    align-items: center; */
-    height: 40px;
-    border: 1px solid black;
+    
+}
+
+.border-bottom:hover {
+    border-bottom: 3px solid black;
+}
+
+.user-wishlist {
+    margin-left : -10px;
 }
 
 
-
- 
 
