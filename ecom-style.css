@@ -271,5 +271,65 @@ header {
     margin-left : -10px;
 }
 
+.hoveredCategoryContainer {
+    position: fixed;
+    top : 79px;
+    left : 0;
+    bottom: 0;
+    right: 0;
+    /* border: 1px solid black; */
+    background-color: rgba(0,0,0,.3);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.nav-link-container:hover .hoveredCategoryContainer {
+    visibility: visible;
+}
+
+.men-category-list-container {
+    background-color: white;
+    font-size: 14px;
+    display: flex;
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    padding: 1.5rem;
+    pointer-events: visible;
+    
+}
+
+.mens-topwear-list,.mens-bottomwear-list {
+    list-style-type: none;
+    /* border: 1px solid black; */
+    margin-right: 1rem;
+    width: 20rem;
+    
+}
+
+.men-category-list-container li{
+    /* border: 1px solid black; */
+    line-height: 30px;
+    /* padding-right: 10rem; */
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+}
+
+.mens-Category-heading {
+
+    color: rgb(214, 58, 58);
+    font-weight: 550;
+}
+
+.hover-category-effect {
+    font-weight: 400;
+    color: #282c3f;
+}
+
+.hover-category-effect:hover {
+    font-weight: 550;
+}
+
 
 
