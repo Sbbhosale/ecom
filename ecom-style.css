@@ -121,6 +121,18 @@ img {
 }
 
 
+
+i , .fa-solid {
+    color : grey;
+    height: 30px; 
+    width : 30px; 
+    font-size: 1.2rem;
+    padding-top : .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
 .productCard-wishlistBtn{
     padding : .5rem .6rem;
     border-radius: .2rem;
